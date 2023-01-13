@@ -1,0 +1,34 @@
+Running with:
+  couchbase version = 3.2.7
+  bucket = benchmark-couchstore
+
+wait_until_ready is not available - sleeping instead
+
+Reads Started @ 492915792620250ns = 492915.79s
+
+Read Batch (0) ...
+Total Read Batch Time @ 191073287333ns = 191.07s
+size: 130000
+avg:  1457009.66ns
+min:  565584.00ns
+max:  28777209.00ns
+p50:  1310500.00ns
+p95:  2321083.00ns
+p99:  3894182.83ns
+p999: 9701041.00ns
+
+Read Batch (1) ...
+Total Read Batch Time @ 166630410333ns = 166.63s
+size: 130000
+avg:  1274001.63ns
+min:  571250.00ns
+max:  22036209.00ns
+p50:  1176125.00ns
+p95:  1894002.10ns
+p99:  2579307.26ns
+p999: 5981458.00ns
+
+Reads Completed @ 493273571432166ns = 493273.57s
+
+Total Time @ 357778811916ns = 357.78s
+

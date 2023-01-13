@@ -1,5 +1,6 @@
 import argparse
 import random
+import string
 import sys
 import threading
 import time
@@ -8,9 +9,7 @@ from importlib.metadata import version
 
 from couchbase.auth import PasswordAuthenticator
 from couchbase.cluster import Cluster, ClusterOptions
-from couchbase.collection import InsertOptions
 from couchbase.options import LockMode
-from couchbase.transcoder import RawBinaryTranscoder
 
 # Static benchmark config parameters
 username = 'Administrator'
@@ -45,7 +44,7 @@ class UpsertThread(threading.Thread):
         print("Starting {name} ({size}) thread".format(name=self.name, size=self.doc_size))
         sys.stdout.flush()
 
-        key_prefix = 'doc_{name}_'.format(name=self.name)
+        key_prefix = 'jdoc_{name}_'.format(name=self.name)
 
         thread_start = time.perf_counter_ns()
         upsert_docs(self.doc_size, key_prefix)
@@ -56,8 +55,6 @@ class UpsertThread(threading.Thread):
               .format(name=self.name, time_ns=thread_total, time_s=thread_total / 1000000000))
         sys.stdout.flush()
 
-
-transcoder = RawBinaryTranscoder()
 
 # Connect options - authentication
 auth = PasswordAuthenticator(
@@ -85,8 +82,8 @@ cb_coll = cb.default_collection()
 
 
 # Function to create random binary data
-def rand_binary(p):
-    value = bytearray(random.getrandbits(8) for _ in range(p))
+def rand_json(p):
+    value = '{"size": '+str(p)+', "text": "'+''.join(random.choices(string.ascii_letters+string.digits, k=p))+'"}'
     return value
 
 
@@ -95,13 +92,13 @@ def upsert_docs(doc_size, key_prefix):
     doc_size_str = str(doc_size)
 
     for i in range(NUM_DOCS):
-        data = rand_binary(doc_size)
+        data = rand_json(doc_size)
         p_done = (i / NUM_DOCS) * 100
         istr = str(i)
         if i % 1000 == 0:
             print(str(p_done) + '% done with ' + doc_size_str + ' docs. ' +
                   istr + ' docs inserted of ' + NUM_DOCS_STR + ' total')
-        cb_coll.upsert(key_prefix + istr + long_suffix, data, InsertOptions(transcoder=transcoder))
+        cb_coll.upsert(key_prefix + istr + long_suffix, data)
 
 
 # Create new threads
@@ -110,7 +107,7 @@ thread2 = UpsertThread(2, "80k", 80000)
 thread3 = UpsertThread(3, "100k", 100000)
 
 started = time.perf_counter_ns()
-print("Threads Started @ {time_ns}ns = {time_s.02f}s\n".format(time_ns=started, time_s=started / 1000000000))
+print("Threads Started @ {time_ns}ns = {time_s:.02f}s\n".format(time_ns=started, time_s=started / 1000000000))
 
 # Start new Threads
 thread1.start()
@@ -123,7 +120,7 @@ thread2.join()
 thread3.join()
 
 completed = time.perf_counter_ns()
-print("\nThreads Completed @ {time_ns}ns = {time_s.02f}s".format(time_ns=completed, time_s=completed / 1000000000))
+print("\nThreads Completed @ {time_ns}ns = {time_s:.02f}s".format(time_ns=completed, time_s=completed / 1000000000))
 
 total = completed - started
-print("\nTotal Time @ {time_ns}ns = {time_s.02f}s\n".format(time_ns=total, time_s=total / 1000000000))
+print("\nTotal Time @ {time_ns}ns = {time_s:.02f}s\n".format(time_ns=total, time_s=total / 1000000000))

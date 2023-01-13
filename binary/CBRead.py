@@ -68,7 +68,7 @@ def read_mixed_docs():
     get_options = GetOptions(transcoder=transcoder)
 
     for i in range(10000):
-        key = 'doc_60k_{:}{:}'.format(random.randint(0, MAX_DOCS_INDEX), long_suffix)
+        key = 'bdoc_60k_{:}{:}'.format(random.randint(0, MAX_DOCS_INDEX), long_suffix)
 
         start_get = time.perf_counter_ns()
         res = cb_coll.get(key, get_options)
@@ -77,7 +77,7 @@ def read_mixed_docs():
         all_times.append(end_get - start_get)
 
         for j in range(10):
-            key = 'doc_80k_{:}{:}'.format(random.randint(0, MAX_DOCS_INDEX), long_suffix)
+            key = 'bdoc_80k_{:}{:}'.format(random.randint(0, MAX_DOCS_INDEX), long_suffix)
 
             start_get = time.perf_counter_ns()
             res = cb_coll.get(key, get_options)
@@ -86,7 +86,7 @@ def read_mixed_docs():
             all_times.append(end_get - start_get)
 
         for j in range(2):
-            key = 'doc_100k_{:}{:}'.format(random.randint(0, MAX_DOCS_INDEX), long_suffix)
+            key = 'bdoc_100k_{:}{:}'.format(random.randint(0, MAX_DOCS_INDEX), long_suffix)
 
             start_get = time.perf_counter_ns()
             res = cb_coll.get(key, get_options)

@@ -1,0 +1,74 @@
+Running with:
+  couchbase version = 4.1.1
+  bucket = benchmark-couchstore
+
+/Users/ray.cardillo/git/misc/cb-python-benchmark/binary/CBUpsert.py:70: CouchbaseDeprecationWarning: Importing ClusterOptions from couchbase.cluster is deprecated and will be removed in a future release.  Import ClusterOptions from couchbase.options instead.
+  cluster = Cluster('couchbase://localhost', ClusterOptions(auth, lockmode=LockMode.WAIT))
+wait_until_ready completed successfully
+
+Threads Started @ 501452675086750ns = 501452.68s
+
+Starting 60k (60000) thread
+0.0% done with 60000 docs. 0 docs inserted of 15000 total
+Starting 80k (80000) threadStarting 100k (100000) thread
+/Users/ray.cardillo/git/misc/cb-python-benchmark/binary/CBUpsert.py:104: CouchbaseDeprecationWarning: Importing UpsertOptions from couchbase.collection is deprecated and will be removed in a future release.  Import UpsertOptions from couchbase.options instead.
+  cb_coll.upsert(key_prefix + istr + long_suffix, data, UpsertOptions(transcoder=transcoder))
+0.0% done with 100000 docs. 0 docs inserted of 15000 total
+
+0.0% done with 80000 docs. 0 docs inserted of 15000 total
+6.666666666666667% done with 60000 docs. 1000 docs inserted of 15000 total
+6.666666666666667% done with 80000 docs. 1000 docs inserted of 15000 total
+6.666666666666667% done with 100000 docs. 1000 docs inserted of 15000 total
+13.333333333333334% done with 60000 docs. 2000 docs inserted of 15000 total
+13.333333333333334% done with 80000 docs. 2000 docs inserted of 15000 total
+13.333333333333334% done with 100000 docs. 2000 docs inserted of 15000 total
+20.0% done with 60000 docs. 3000 docs inserted of 15000 total
+20.0% done with 80000 docs. 3000 docs inserted of 15000 total
+20.0% done with 100000 docs. 3000 docs inserted of 15000 total
+26.666666666666668% done with 60000 docs. 4000 docs inserted of 15000 total
+26.666666666666668% done with 80000 docs. 4000 docs inserted of 15000 total
+26.666666666666668% done with 100000 docs. 4000 docs inserted of 15000 total
+33.33333333333333% done with 60000 docs. 5000 docs inserted of 15000 total
+33.33333333333333% done with 80000 docs. 5000 docs inserted of 15000 total
+33.33333333333333% done with 100000 docs. 5000 docs inserted of 15000 total
+40.0% done with 60000 docs. 6000 docs inserted of 15000 total40.0% done with 80000 docs. 6000 docs inserted of 15000 total
+
+46.666666666666664% done with 80000 docs. 7000 docs inserted of 15000 total
+46.666666666666664% done with 60000 docs. 7000 docs inserted of 15000 total
+40.0% done with 100000 docs. 6000 docs inserted of 15000 total
+53.333333333333336% done with 80000 docs. 8000 docs inserted of 15000 total
+53.333333333333336% done with 60000 docs. 8000 docs inserted of 15000 total
+46.666666666666664% done with 100000 docs. 7000 docs inserted of 15000 total
+60.0% done with 60000 docs. 9000 docs inserted of 15000 total
+60.0% done with 80000 docs. 9000 docs inserted of 15000 total
+53.333333333333336% done with 100000 docs. 8000 docs inserted of 15000 total
+66.66666666666666% done with 60000 docs. 10000 docs inserted of 15000 total
+66.66666666666666% done with 80000 docs. 10000 docs inserted of 15000 total
+60.0% done with 100000 docs. 9000 docs inserted of 15000 total
+73.33333333333333% done with 60000 docs. 11000 docs inserted of 15000 total
+73.33333333333333% done with 80000 docs. 11000 docs inserted of 15000 total
+66.66666666666666% done with 100000 docs. 10000 docs inserted of 15000 total
+80.0% done with 60000 docs. 12000 docs inserted of 15000 total
+80.0% done with 80000 docs. 12000 docs inserted of 15000 total
+86.66666666666667% done with 60000 docs. 13000 docs inserted of 15000 total
+86.66666666666667% done with 80000 docs. 13000 docs inserted of 15000 total
+73.33333333333333% done with 100000 docs. 11000 docs inserted of 15000 total
+93.33333333333333% done with 60000 docs. 14000 docs inserted of 15000 total
+93.33333333333333% done with 80000 docs. 14000 docs inserted of 15000 total
+80.0% done with 100000 docs. 12000 docs inserted of 15000 total
+
+Completed 60k thread after 212541434833ns = 212.541434833s
+
+
+Completed 80k thread after 212532465291ns = 212.532465291s
+
+86.66666666666667% done with 100000 docs. 13000 docs inserted of 15000 total
+93.33333333333333% done with 100000 docs. 14000 docs inserted of 15000 total
+
+Completed 100k thread after 230669800833ns = 230.669800833s
+
+
+Threads Completed @ 501683350136458ns = 501683.35s
+
+Total Time @ 230675049708ns = 230.68s
+
