@@ -1,0 +1,70 @@
+Running with:
+  couchbase version = 3.2.7
+  bucket = benchmark-magma
+
+wait_until_ready is not available - sleeping instead
+
+Threads Started @ 502718401271875ns = 502718.40s
+
+Starting 60k (60000) thread
+0.0% done with 60000 docs. 0 docs inserted of 15000 totalStarting 80k (80000) thread
+Starting 100k (100000) thread
+
+0.0% done with 80000 docs. 0 docs inserted of 15000 total
+0.0% done with 100000 docs. 0 docs inserted of 15000 total
+6.666666666666667% done with 80000 docs. 1000 docs inserted of 15000 total
+6.666666666666667% done with 60000 docs. 1000 docs inserted of 15000 total
+6.666666666666667% done with 100000 docs. 1000 docs inserted of 15000 total
+13.333333333333334% done with 80000 docs. 2000 docs inserted of 15000 total
+13.333333333333334% done with 60000 docs. 2000 docs inserted of 15000 total
+13.333333333333334% done with 100000 docs. 2000 docs inserted of 15000 total
+20.0% done with 80000 docs. 3000 docs inserted of 15000 total
+20.0% done with 60000 docs. 3000 docs inserted of 15000 total
+20.0% done with 100000 docs. 3000 docs inserted of 15000 total
+26.666666666666668% done with 80000 docs. 4000 docs inserted of 15000 total
+26.666666666666668% done with 60000 docs. 4000 docs inserted of 15000 total
+26.666666666666668% done with 100000 docs. 4000 docs inserted of 15000 total
+33.33333333333333% done with 80000 docs. 5000 docs inserted of 15000 total
+33.33333333333333% done with 60000 docs. 5000 docs inserted of 15000 total
+33.33333333333333% done with 100000 docs. 5000 docs inserted of 15000 total
+40.0% done with 80000 docs. 6000 docs inserted of 15000 total
+40.0% done with 60000 docs. 6000 docs inserted of 15000 total
+40.0% done with 100000 docs. 6000 docs inserted of 15000 total
+46.666666666666664% done with 80000 docs. 7000 docs inserted of 15000 total
+46.666666666666664% done with 60000 docs. 7000 docs inserted of 15000 total
+46.666666666666664% done with 100000 docs. 7000 docs inserted of 15000 total
+53.333333333333336% done with 80000 docs. 8000 docs inserted of 15000 total
+53.333333333333336% done with 60000 docs. 8000 docs inserted of 15000 total
+53.333333333333336% done with 100000 docs. 8000 docs inserted of 15000 total
+60.0% done with 80000 docs. 9000 docs inserted of 15000 total
+60.0% done with 60000 docs. 9000 docs inserted of 15000 total
+60.0% done with 100000 docs. 9000 docs inserted of 15000 total
+66.66666666666666% done with 80000 docs. 10000 docs inserted of 15000 total
+66.66666666666666% done with 60000 docs. 10000 docs inserted of 15000 total
+66.66666666666666% done with 100000 docs. 10000 docs inserted of 15000 total
+73.33333333333333% done with 80000 docs. 11000 docs inserted of 15000 total
+73.33333333333333% done with 60000 docs. 11000 docs inserted of 15000 total
+73.33333333333333% done with 100000 docs. 11000 docs inserted of 15000 total
+80.0% done with 80000 docs. 12000 docs inserted of 15000 total
+80.0% done with 60000 docs. 12000 docs inserted of 15000 total
+80.0% done with 100000 docs. 12000 docs inserted of 15000 total
+86.66666666666667% done with 80000 docs. 13000 docs inserted of 15000 total
+86.66666666666667% done with 60000 docs. 13000 docs inserted of 15000 total
+86.66666666666667% done with 100000 docs. 13000 docs inserted of 15000 total
+93.33333333333333% done with 80000 docs. 14000 docs inserted of 15000 total
+93.33333333333333% done with 60000 docs. 14000 docs inserted of 15000 total
+93.33333333333333% done with 100000 docs. 14000 docs inserted of 15000 total
+
+Completed 80k thread after 268141843000ns = 268.141843s
+
+
+Completed 60k thread after 268157108583ns = 268.157108583s
+
+
+Completed 100k thread after 268138072916ns = 268.138072916s
+
+
+Threads Completed @ 502986560517500ns = 502986.56s
+
+Total Time @ 268159245625ns = 268.16s
+

@@ -1,0 +1,38 @@
+Running with:
+  couchbase version = 4.1.1
+  bucket = benchmark-couchstore
+
+/Users/ray.cardillo/git/misc/cb-python-benchmark/binary/CBRead.py:45: CouchbaseDeprecationWarning: Importing ClusterOptions from couchbase.cluster is deprecated and will be removed in a future release.  Import ClusterOptions from couchbase.options instead.
+  cluster = Cluster('couchbase://localhost', ClusterOptions(auth))
+wait_until_ready completed successfully
+
+/Users/ray.cardillo/git/misc/cb-python-benchmark/binary/CBRead.py:68: CouchbaseDeprecationWarning: Importing GetOptions from couchbase.collection is deprecated and will be removed in a future release.  Import GetOptions from couchbase.options instead.
+  get_options = GetOptions(transcoder=transcoder)
+Reads Started @ 504080844747416ns = 504080.84s
+
+Read Batch (0) ...
+Total Read Batch Time @ 237454751916ns = 237.45s
+size: 130000
+avg:  1818785.80ns
+min:  798875.00ns
+max:  60059833.00ns
+p50:  1592542.00ns
+p95:  3071295.20ns
+p99:  4527061.17ns
+p999: 12953083.00ns
+
+Read Batch (1) ...
+Total Read Batch Time @ 221062537625ns = 221.06s
+size: 130000
+avg:  1692926.28ns
+min:  797958.00ns
+max:  33894958.00ns
+p50:  1525458.00ns
+p95:  2701133.30ns
+p99:  4406299.50ns
+p999: 9182250.00ns
+
+Reads Completed @ 504539409940416ns = 504539.41s
+
+Total Time @ 458565193000ns = 458.57s
+

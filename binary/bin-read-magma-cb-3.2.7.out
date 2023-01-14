@@ -1,0 +1,34 @@
+Running with:
+  couchbase version = 3.2.7
+  bucket = benchmark-magma
+
+wait_until_ready is not available - sleeping instead
+
+Reads Started @ 503636814016791ns = 503636.81s
+
+Read Batch (0) ...
+Total Read Batch Time @ 149106735000ns = 149.11s
+size: 130000
+avg:  1139300.80ns
+min:  428042.00ns
+max:  108221250.00ns
+p50:  984291.00ns
+p95:  1933131.25ns
+p99:  2878672.83ns
+p999: 7506125.00ns
+
+Read Batch (1) ...
+Total Read Batch Time @ 155087633083ns = 155.09s
+size: 130000
+avg:  1185259.88ns
+min:  432292.00ns
+max:  96975292.00ns
+p50:  1028354.50ns
+p95:  1993000.00ns
+p99:  3013807.41ns
+p999: 11168083.00ns
+
+Reads Completed @ 503941071171041ns = 503941.07s
+
+Total Time @ 304257154250ns = 304.26s
+
