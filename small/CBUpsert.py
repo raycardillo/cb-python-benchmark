@@ -91,7 +91,7 @@ def rand_binary(p):
 
 
 def upsert_docs(doc_size, key_prefix):
-    long_suffix = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    long_suffix = "aaaaa"
     doc_size_str = str(doc_size)
 
     for i in range(NUM_DOCS):

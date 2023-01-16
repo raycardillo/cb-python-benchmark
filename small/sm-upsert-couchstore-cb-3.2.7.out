@@ -1,0 +1,31 @@
+Running with:
+  couchbase version = 3.2.7
+  bucket = benchmark-couchstore
+
+wait_until_ready is not available - sleeping instead
+
+Threads Started @ 513458620182875ns = 513458.62s
+
+Starting 2k (2000) thread
+0.0% done with 2000 docs. 0 docs inserted of 2000 total
+Starting 4k (4000) thread
+0.0% done with 4000 docs. 0 docs inserted of 2000 total
+Starting 8k (8000) thread
+0.0% done with 8000 docs. 0 docs inserted of 2000 total
+50.0% done with 2000 docs. 1000 docs inserted of 2000 total
+50.0% done with 4000 docs. 1000 docs inserted of 2000 total
+50.0% done with 8000 docs. 1000 docs inserted of 2000 total
+
+Completed 2k thread after 5964187708ns = 5.964187708s
+
+
+Completed 4k thread after 6030478417ns = 6.030478417s
+
+
+Completed 8k thread after 6060232791ns = 6.060232791s
+
+
+Threads Completed @ 513464682870500ns = 513464.68s
+
+Total Time @ 6062687625ns = 6.06s
+

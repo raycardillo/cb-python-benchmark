@@ -58,7 +58,7 @@ cb = cluster.bucket(bucket_name)
 # Get a reference to the default collection, required for older Couchbase server versions
 cb_coll = cb.default_collection()
 
-long_suffix = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+long_suffix = "aaaaa"
 
 
 def read_mixed_docs():
