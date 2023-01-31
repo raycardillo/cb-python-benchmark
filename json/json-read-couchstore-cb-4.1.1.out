@@ -1,36 +1,36 @@
 /Users/ray.cardillo/git/misc/cb-python-benchmark/json/CBRead.py:43: CouchbaseDeprecationWarning: Importing ClusterOptions from couchbase.cluster is deprecated and will be removed in a future release.  Import ClusterOptions from couchbase.options instead.
-Running with:
   cluster = Cluster('couchbase://localhost', ClusterOptions(auth))
+Running with:
   couchbase version = 4.1.1
   bucket = benchmark-couchstore
 
 wait_until_ready completed successfully
 
-Reads Started @ 495756137165916ns = 495756.14s
+Reads Started @ 448595607852083ns = 448595.61s
 
 Read Batch (0) ...
-Total Read Batch Time @ 281265867125ns = 281.27s
+Total Read Batch Time @ 261113561083ns = 261.11s
 size: 130000
-avg:  2153791.57ns
-min:  960042.00ns
-max:  59611667.00ns
-p50:  1989250.00ns
-p95:  3149752.05ns
-p99:  4716600.24ns
-p999: 12842750.00ns
+avg:  2000003.80ns
+min:  941750.00ns
+max:  29441375.00ns
+p50:  1872354.50ns
+p95:  2828125.00ns
+p99:  3724588.58ns
+p999: 10352583.00ns
 
 Read Batch (1) ...
-Total Read Batch Time @ 254477582625ns = 254.48s
+Total Read Batch Time @ 275190753458ns = 275.19s
 size: 130000
-avg:  1949106.82ns
-min:  968625.00ns
-max:  28818083.00ns
-p50:  1819687.50ns
-p95:  2785210.10ns
-p99:  3836092.75ns
-p999: 9766625.00ns
+avg:  2107140.55ns
+min:  954208.00ns
+max:  41871041.00ns
+p50:  1945104.00ns
+p95:  3124125.00ns
+p99:  4521755.83ns
+p999: 11615834.00ns
 
-Reads Completed @ 496291941719458ns = 496291.94s
+Reads Completed @ 449131988953291ns = 449131.99s
 
-Total Time @ 535804553542ns = 535.80s
+Total Time @ 536381101208ns = 536.38s
 

@@ -8,31 +8,31 @@ wait_until_ready completed successfully
 
 /Users/ray.cardillo/git/misc/cb-python-benchmark/small/CBRead.py:68: CouchbaseDeprecationWarning: Importing GetOptions from couchbase.collection is deprecated and will be removed in a future release.  Import GetOptions from couchbase.options instead.
   get_options = GetOptions(transcoder=transcoder)
-Reads Started @ 443800962497250ns = 443800.96s
+Reads Started @ 686369159945666ns = 686369.16s
 
 Read Batch (0) ...
-Total Read Batch Time @ 100997201000ns = 101.00s
+Total Read Batch Time @ 75891139167ns = 75.89s
 size: 130000
-avg:  767598.85ns
-min:  363500.00ns
-max:  23421375.00ns
-p50:  768292.00ns
-p95:  1054958.05ns
-p99:  1737794.76ns
-p999: 4393458.00ns
+avg:  576145.54ns
+min:  324791.00ns
+max:  21334750.00ns
+p50:  536208.00ns
+p95:  741544.10ns
+p99:  1075960.25ns
+p999: 4173916.00ns
 
 Read Batch (1) ...
-Total Read Batch Time @ 106919629291ns = 106.92s
+Total Read Batch Time @ 77474054666ns = 77.47s
 size: 130000
-avg:  812401.35ns
-min:  305459.00ns
-max:  60111458.00ns
-p50:  790875.00ns
-p95:  1076377.10ns
-p99:  1922878.75ns
-p999: 6839667.00ns
+avg:  588386.53ns
+min:  323833.00ns
+max:  21401417.00ns
+p50:  536083.00ns
+p95:  805000.00ns
+p99:  1331125.84ns
+p999: 4191416.00ns
 
-Reads Completed @ 444008942924333ns = 444008.94s
+Reads Completed @ 686522582835250ns = 686522.58s
 
-Total Time @ 207980427083ns = 207.98s
+Total Time @ 153422889584ns = 153.42s
 

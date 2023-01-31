@@ -4,31 +4,31 @@ Running with:
 
 wait_until_ready is not available - sleeping instead
 
-Reads Started @ 513487042690916ns = 513487.04s
+Reads Started @ 443336856299125ns = 443336.86s
 
 Read Batch (0) ...
-Total Read Batch Time @ 73549106500ns = 73.55s
+Total Read Batch Time @ 62062643875ns = 62.06s
 size: 130000
-avg:  557529.21ns
-min:  261292.00ns
-max:  31142500.00ns
-p50:  505000.00ns
-p95:  785458.00ns
-p99:  1499003.75ns
-p999: 4962250.00ns
+avg:  471410.05ns
+min:  303000.00ns
+max:  20862042.00ns
+p50:  443084.00ns
+p95:  591625.00ns
+p99:  935292.25ns
+p999: 2564208.00ns
 
 Read Batch (1) ...
-Total Read Batch Time @ 74378693792ns = 74.38s
+Total Read Batch Time @ 60673569417ns = 60.67s
 size: 130000
-avg:  563547.53ns
-min:  290000.00ns
-max:  59856333.00ns
-p50:  498708.00ns
-p95:  859086.05ns
-p99:  1668088.42ns
-p999: 5181250.00ns
+avg:  461029.05ns
+min:  313250.00ns
+max:  34160833.00ns
+p50:  438250.00ns
+p95:  560458.05ns
+p99:  820792.67ns
+p999: 2477500.00ns
 
-Reads Completed @ 513635019945666ns = 513635.02s
+Reads Completed @ 443459645295041ns = 443459.65s
 
-Total Time @ 147977254750ns = 147.98s
+Total Time @ 122788995916ns = 122.79s
 

@@ -1,0 +1,35 @@
+/Users/ray.cardillo/git/misc/cb-python-benchmark/small/CBUpsert.py:70: CouchbaseDeprecationWarning: Importing ClusterOptions from couchbase.cluster is deprecated and will be removed in a future release.  Import ClusterOptions from couchbase.options instead.
+Running with:
+  cluster = Cluster('couchbase://localhost', ClusterOptions(auth, lockmode=LockMode.WAIT))
+  couchbase version = 4.1.1.dev4+geb6ccef2
+  bucket = benchmark-couchstore
+
+wait_until_ready completed successfully
+
+/Users/ray.cardillo/git/misc/cb-python-benchmark/small/CBUpsert.py:104: CouchbaseDeprecationWarning: Importing UpsertOptions from couchbase.collection is deprecated and will be removed in a future release.  Import UpsertOptions from couchbase.options instead.
+  cb_coll.upsert(key_prefix + istr + long_suffix, data, UpsertOptions(transcoder=transcoder))
+Threads Started @ 440232326969500ns = 440232.33s
+
+Starting 2k (2000) thread
+0.0% done with 2000 docs. 0 docs inserted of 2000 total
+Starting 4k (4000) thread
+0.0% done with 4000 docs. 0 docs inserted of 2000 total
+Starting 8k (8000) thread
+0.0% done with 8000 docs. 0 docs inserted of 2000 total
+50.0% done with 2000 docs. 1000 docs inserted of 2000 total
+50.0% done with 4000 docs. 1000 docs inserted of 2000 total
+50.0% done with 8000 docs. 1000 docs inserted of 2000 total
+
+Completed 2k thread after 2448618209ns = 2.448618209s
+
+
+Completed 4k thread after 2485982250ns = 2.48598225s
+
+
+Completed 8k thread after 2540468500ns = 2.5404685s
+
+
+Threads Completed @ 440234868525250ns = 440234.87s
+
+Total Time @ 2541555750ns = 2.54s
+

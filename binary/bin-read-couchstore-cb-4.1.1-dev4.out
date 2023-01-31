@@ -1,38 +1,38 @@
 Running with:
-  couchbase version = 4.1.1
+  couchbase version = 4.1.1.dev4+geb6ccef2
   bucket = benchmark-couchstore
 
 /Users/ray.cardillo/git/misc/cb-python-benchmark/binary/CBRead.py:45: CouchbaseDeprecationWarning: Importing ClusterOptions from couchbase.cluster is deprecated and will be removed in a future release.  Import ClusterOptions from couchbase.options instead.
   cluster = Cluster('couchbase://localhost', ClusterOptions(auth))
 wait_until_ready completed successfully
 
-Reads Started @ 445450001549125ns = 445450.00s
-
-Read Batch (0) ...
 /Users/ray.cardillo/git/misc/cb-python-benchmark/binary/CBRead.py:68: CouchbaseDeprecationWarning: Importing GetOptions from couchbase.collection is deprecated and will be removed in a future release.  Import GetOptions from couchbase.options instead.
   get_options = GetOptions(transcoder=transcoder)
-Total Read Batch Time @ 229163445375ns = 229.16s
+Reads Started @ 446302512232791ns = 446302.51s
+
+Read Batch (0) ...
+Total Read Batch Time @ 149533181875ns = 149.53s
 size: 130000
-avg:  1753843.10ns
-min:  865250.00ns
-max:  68245000.00ns
-p50:  1609417.00ns
-p95:  2584377.10ns
-p99:  3850929.50ns
-p999: 9523792.00ns
+avg:  1143574.03ns
+min:  607542.00ns
+max:  22276250.00ns
+p50:  1058250.00ns
+p95:  1701419.05ns
+p99:  2196209.67ns
+p999: 4914833.00ns
 
 Read Batch (1) ...
-Total Read Batch Time @ 220815840708ns = 220.82s
+Total Read Batch Time @ 150032978833ns = 150.03s
 size: 130000
-avg:  1690168.42ns
-min:  862750.00ns
-max:  31420208.00ns
-p50:  1574875.00ns
-p95:  2378667.00ns
-p99:  3186590.08ns
-p999: 7795375.00ns
+avg:  1147313.41ns
+min:  580834.00ns
+max:  15913875.00ns
+p50:  1062792.00ns
+p95:  1700627.10ns
+p99:  2200254.59ns
+p999: 5039625.00ns
 
-Reads Completed @ 445900031931958ns = 445900.03s
+Reads Completed @ 446602129407833ns = 446602.13s
 
-Total Time @ 450030382833ns = 450.03s
+Total Time @ 299617175042ns = 299.62s
 
